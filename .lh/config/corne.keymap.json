@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1751974237065,
@@ -12,6 +12,38 @@
                 {
                     "date": 1751974248136,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n / {\n     keymap {\n         compatible = \"zmk,keymap\";\n-        \n+        display-name = \"Colemak\";\n \n         default_layer {\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n"
+                },
+                {
+                    "date": 1751974958805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n \n / {\n     keymap {\n         compatible = \"zmk,keymap\";\n-        display-name = \"Colemak\";\n \n+\n         default_layer {\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |\n"
+                },
+                {
+                    "date": 1751974965141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n / {\n     keymap {\n         compatible = \"zmk,keymap\";\n \n-\n         default_layer {\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |\n"
+                },
+                {
+                    "date": 1751974972993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n #include <dt-bindings/zmk/keys.h>\n \n / {\n     keymap {\n-        compatible = \"zmk,keymap\";\n+   o     compatible = \"zmk,keymap\";\n \n         default_layer {\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n"
+                },
+                {
+                    "date": 1751974990441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n #include <dt-bindings/zmk/keys.h>\n \n / {\n     keymap {\n-   o     compatible = \"zmk,keymap\";\n+        compatible = \"zmk,keymap\";\n \n-        default_layer {\n+        default_layer \n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |\n             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |\n"
+                },
+                {
+                    "date": 1751974991396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n / {\n     keymap {\n         compatible = \"zmk,keymap\";\n \n-        default_layer \n+        default_layer {\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |\n             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |\n"
+                },
+                {
+                    "date": 1751974998391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     keymap {\n         compatible = \"zmk,keymap\";\n \n         default_layer {\n+                        display-name = \"Colemak\";\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |\n             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |\n"
+                },
+                {
+                    "date": 1751975003564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     keymap {\n         compatible = \"zmk,keymap\";\n \n         default_layer {\n-                        display-name = \"Colemak\";\n+                display-name = \"Colemak\";\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |\n             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |\n"
+                },
+                {
+                    "date": 1751975049081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     keymap {\n         compatible = \"zmk,keymap\";\n \n         default_layer {\n-                display-name = \"Colemak\";\n+            display-name = \"Colemak\";\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |\n             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |\n"
                 }
             ],
             "date": 1751974237065,
