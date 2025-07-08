@@ -11,6 +11,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+        display-name = "Colemak";
 
         default_layer {
             // -----------------------------------------------------------------------------------------

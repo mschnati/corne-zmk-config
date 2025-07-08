@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1751968559885,
@@ -24,6 +24,30 @@
                 {
                     "date": 1751968645785,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n # Set deep sleep to 30 minutes\n CONFIG_ZMK_SLEEP=y\n CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n \n-# Change \n+# Change board name\n+\n"
+                },
+                {
+                    "date": 1751971564943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,22 @@\n CONFIG_ZMK_SLEEP=y\n CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n \n # Change board name\n+CONFIG_ZMK_KEYBOARD_NAME=\"Schnati's Corne\"\n \n+# Uncomment the following line to enable deep sleep\n+# CONFIG_ZMK_SLEEP=y\n+\n+# Uncomment the following line to increase the keyboard's wireless range\n+CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\n+\n+# Enable eager debouncing\n+CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=1\n+CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=10\n+\n+# Enable ZMK Studio for Realtime Keymap Updates\n+CONFIG_ZMK_STUDIO=y\n+CONFIG_ZMK_STUDIO_LOCKING=n\n+\n+# Uncomment the following line to enable USB Logging (this increases power usage by a significant amount, turn it off when not in use)\n+# CONFIG_ZMK_USB_LOGGING=y\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751971582433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,8 @@\n \n # Change board name\n CONFIG_ZMK_KEYBOARD_NAME=\"Schnati's Corne\"\n \n-# Uncomment the following line to enable deep sleep\n-# CONFIG_ZMK_SLEEP=y\n-\n # Uncomment the following line to increase the keyboard's wireless range\n CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\n \n # Enable eager debouncing\n"
+                },
+                {
+                    "date": 1751971594986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,4 @@\n-# Uncomment the following lines to enable the Corne RGB Underglow\n-# CONFIG_ZMK_RGB_UNDERGLOW=y\n-# CONFIG_WS2812_STRIP=y\n-\n-# Uncomment the following line to enable the Corne OLED Display\n-# CONFIG_ZMK_DISPLAY=y\n-\n # Set deep sleep to 30 minutes\n CONFIG_ZMK_SLEEP=y\n CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n \n"
+                },
+                {
+                    "date": 1751971748833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n CONFIG_ZMK_SLEEP=y\n CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n \n # Change board name\n-CONFIG_ZMK_KEYBOARD_NAME=\"Schnati's Corne\"\n+CONFIG_ZMK_KEYBOARD_NAME=\"Schnati Corne\"\n \n # Uncomment the following line to increase the keyboard's wireless range\n CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\n \n"
+                },
+                {
+                    "date": 1751972671263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=1\n CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=10\n \n # Enable ZMK Studio for Realtime Keymap Updates\n-CONFIG_ZMK_STUDIO=y\n+CONFIG_ZMK_STUDIO=n\n CONFIG_ZMK_STUDIO_LOCKING=n\n \n # Uncomment the following line to enable USB Logging (this increases power usage by a significant amount, turn it off when not in use)\n # CONFIG_ZMK_USB_LOGGING=y\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751973072343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n CONFIG_ZMK_SLEEP=y\n CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n \n # Change board name\n-CONFIG_ZMK_KEYBOARD_NAME=\"Schnati Corne\"\n+CONFIG_ZMK_KEYBOARD_NAME=\"Schnatis Corne\"\n \n # Uncomment the following line to increase the keyboard's wireless range\n CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\n \n"
                 }
             ],
             "date": 1751968559885,

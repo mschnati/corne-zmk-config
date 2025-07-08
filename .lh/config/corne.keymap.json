@@ -1,0 +1,22 @@
+{
+    "sourceFile": "config/corne.keymap",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1751974237065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751974248136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n / {\n     keymap {\n         compatible = \"zmk,keymap\";\n-        \n+        display-name = \"Colemak\";\n \n         default_layer {\n             // -----------------------------------------------------------------------------------------\n             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n"
+                }
+            ],
+            "date": 1751974237065,
+            "name": "Commit-0",
+            "content": "/*\n * Copyright (c) 2020 The ZMK Contributors\n *\n * SPDX-License-Identifier: MIT\n */\n\n#include <behaviors.dtsi>\n#include <dt-bindings/zmk/bt.h>\n#include <dt-bindings/zmk/keys.h>\n\n/ {\n    keymap {\n        compatible = \"zmk,keymap\";\n        \n\n        default_layer {\n            // -----------------------------------------------------------------------------------------\n            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |\n            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |\n            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |\n            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |\n\n            bindings = <\n&kp TAB    &kp Q  &kp W  &kp F             &kp P  &kp B        &kp J    &kp L          &kp U      &kp Y       &kp SINGLE_QUOTE  &kp NON_US_BACKSLASH\n&kp LSHFT  &kp A  &kp R  &kp S             &kp T  &kp G        &kp M    &kp N          &kp E      &kp I       &kp O             &kp SEMICOLON\n&kp LCTRL  &kp Z  &kp X  &kp C             &kp D  &kp V        &kp K    &kp H          &kp COMMA  &kp PERIOD  &kp MINUS         &kp SLASH\n                         &kp LA(LEFT_ALT)  &mo 1  &kp SPACE    &kp RET  &kp BACKSPACE  &mo 2\n            >;\n        };\n\n        lower_layer {\n            // -----------------------------------------------------------------------------------------\n            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |\n            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |\n            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |\n            //                    | GUI |     | SPC |   | ENT |     | ALT |\n\n            bindings = <\n&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC\n&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans\n&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans\n                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT\n            >;\n        };\n\n        raise_layer {\n            // -----------------------------------------------------------------------------------------\n            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |\n            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \\  |  `   |\n            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | \"|\" |  ~   |\n            //                    | GUI |     | SPC |   | ENT |     | ALT |\n\n            bindings = <\n&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC\n&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE\n&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE\n                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT\n            >;\n        };\n    };\n};\n"
+        }
+    ]
+}
