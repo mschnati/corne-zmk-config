@@ -1,0 +1,34 @@
+{
+    "sourceFile": "config/corne.conf",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1751968559885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751968596263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,7 @@\n \n # Uncomment the following line to enable the Corne OLED Display\n # CONFIG_ZMK_DISPLAY=y\n \n-# Set deep sleep \n+# Set deep sleep to 30 minutes\n+CONFIG_ZMK_DEEP_SLEEP=y\n+CONFIG_ZMK_DEEP_SLEEP_TIMEOUT=1800\n"
+                },
+                {
+                    "date": 1751968606251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n # Uncomment the following line to enable the Corne OLED Display\n # CONFIG_ZMK_DISPLAY=y\n \n # Set deep sleep to 30 minutes\n-CONFIG_ZMK_DEEP_SLEEP=y\n-CONFIG_ZMK_DEEP_SLEEP_TIMEOUT=1800\n+CONFIG_ZMKSLEEP=y\n+CONFIG_ZMK_DEEP_SLEEP_TIMEOUT=\n"
+                },
+                {
+                    "date": 1751968640113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,8 @@\n # Uncomment the following line to enable the Corne OLED Display\n # CONFIG_ZMK_DISPLAY=y\n \n # Set deep sleep to 30 minutes\n-CONFIG_ZMKSLEEP=y\n-CONFIG_ZMK_DEEP_SLEEP_TIMEOUT=\n+CONFIG_ZMK_SLEEP=y\n+CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n+\n+# Change \n"
+                },
+                {
+                    "date": 1751968645785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n # Set deep sleep to 30 minutes\n CONFIG_ZMK_SLEEP=y\n CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n \n-# Change \n+# Change board name\n+\n"
+                }
+            ],
+            "date": 1751968559885,
+            "name": "Commit-0",
+            "content": "# Uncomment the following lines to enable the Corne RGB Underglow\n# CONFIG_ZMK_RGB_UNDERGLOW=y\n# CONFIG_WS2812_STRIP=y\n\n# Uncomment the following line to enable the Corne OLED Display\n# CONFIG_ZMK_DISPLAY=y\n\n# Set deep sleep \n"
+        }
+    ]
+}

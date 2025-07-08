@@ -1,0 +1,26 @@
+{
+    "sourceFile": "build.yaml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1751968503281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751968511505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n #\n ---\n include:\n   - board: nice_nano_v2\n-    shield: corne_left nice_view_adapter\n+    shield: corne_left nice_view_adapter nice_view\n   - board: nice_nano_v2\n     shield: corne_right\n"
+                },
+                {
+                    "date": 1751968522528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n include:\n   - board: nice_nano_v2\n     shield: corne_left nice_view_adapter nice_view\n   - board: nice_nano_v2\n-    shield: corne_right\n+    shield: corne_right nice_view_adapter nice_view\n"
+                }
+            ],
+            "date": 1751968503281,
+            "name": "Commit-0",
+            "content": "# This file generates the GitHub Actions matrix.\n# For simple board + shield combinations, add them to the top level board and\n# shield arrays, for more control, add individual board + shield combinations\n# to the `include` property. You can also use the `cmake-args` property to\n# pass flags to the build command, `snippet` to add a Zephyr snippet, and\n# `artifact-name` to assign a name to distinguish build outputs from each other:\n#\n# board: [ \"nice_nano_v2\" ]\n# shield: [ \"corne_left\", \"corne_right\" ]\n# include:\n#   - board: bdn9_rev2\n#   - board: nice_nano_v2\n#     shield: reviung41\n#   - board: nice_nano_v2\n#     shield: corne_left\n#     snippet: studio-rpc-usb-uart\n#     cmake-args: -DCONFIG_ZMK_STUDIO=y\n#     artifact-name: corne_left_with_studio\n#\n---\ninclude:\n  - board: nice_nano_v2\n    shield: corne_left nice_view_adapter\n  - board: nice_nano_v2\n    shield: corne_right\n"
+        }
+    ]
+}
