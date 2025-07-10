@@ -72,7 +72,7 @@
             >;
         };
 
-        layer_3 {
+        layer,3 {
             display-name = "3 FKeys";
 
             bindings = <
