@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        layer3 {
+            bindings = <&mo 3>;
+            key-positions = <37 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,14 +31,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F             &kp P  &kp B        &kp J    &kp L          &kp U      &kp Y       &kp SINGLE_QUOTE  &kp NON_US_BACKSLASH
-&kp LSHFT  &kp A  &kp R  &kp S             &kp T  &kp G        &kp M    &kp N          &kp E      &kp I       &kp O             &kp SEMICOLON
-&kp LCTRL  &kp Z  &kp X  &kp C             &kp D  &kp V        &kp K    &kp H          &kp COMMA  &kp PERIOD  &kp MINUS         &kp SLASH
-                         &kp LA(LEFT_ALT)  &mo 2  &kp SPACE    &kp RET  &kp BACKSPACE  &mo 1
+&kp TAB    &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J    &kp L          &kp U      &kp Y       &kp SINGLE_QUOTE  &kp NON_US_BACKSLASH
+&kp LSHFT  &kp A  &kp R  &kp S         &kp T  &kp G        &kp M    &kp N          &kp E      &kp I       &kp O             &kp SEMICOLON
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp K    &kp H          &kp COMMA  &kp PERIOD  &kp MINUS         &kp SLASH
+                         &kp LEFT_ALT  &mo 2  &kp SPACE    &kp RET  &kp BACKSPACE  &mo 1
             >;
         };
 
-        lower_layer {
+        layer_1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -37,14 +46,16 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6   &kp N7    &kp N8    &kp N9  &kp N0     &kp C_VOLUME_UP
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp C_VOLUME_DOWN
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans   &trans    &trans    &trans  &trans     &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET  &trans    &kp RALT
+&kp ESCAPE  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6         &kp N7    &kp N8    &kp N9  &kp N0     &kp C_VOLUME_UP
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LA(SPACE)  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp C_VOLUME_DOWN
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans         &trans    &trans    &trans  &trans     &trans
+                                        &kp LGUI      &trans        &kp SPACE       &kp RET        &trans    &trans
             >;
+
+            label = "1 Ctrls";
         };
 
-        raise_layer {
+        layer_2 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -52,11 +63,24 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB         &kp EXCLAMATION  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT           &kp CARET          &kp AMPS   &kp RA(Y)   &kp LPAR  &kp RPAR   &kp EQUAL
-&kp LEFT_SHIFT  &kp RA(Q)        &trans  &kp RA(S)  &trans    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp EQUAL  &kp RA(N5)  &kp RBKT  &kp RA(P)  &kp GRAVE
-&kp LCTRL       &trans           &trans  &trans     &trans    &trans              &kp UNDER          &kp PLUS   &kp LBRC    &kp RBRC  &kp PIPE   &kp TILDE
-                                         &kp LGUI   &trans    &kp SPACE           &kp RET            &trans     &kp RALT
+&kp TAB         &kp EXCLAMATION  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT           &kp CARET          &kp AMPS  &kp ASTERISK  &kp LPAR   &kp RPAR   &kp EQUAL
+&kp LEFT_SHIFT  &kp RA(Q)        &trans  &kp RA(S)  &trans    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &trans    &kp RA(N5)    &kp RA(Y)  &kp RA(P)  &kp GRAVE
+&kp LCTRL       &trans           &trans  &trans     &trans    &kp LEFT_BRACE      &kp RIGHT_BRACE    &trans    &trans        &trans     &trans     &kp TILDE
+                                         &kp LGUI   &trans    &kp SPACE           &kp RET            &trans    &kp RALT
             >;
+
+            label = "2 Specl";
+        };
+
+        F-Keys_3 {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "3 FKeys";
         };
     };
 };
