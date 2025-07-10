@@ -72,7 +72,7 @@
             >;
         };
 
-        f-KEys_3 {
+        layer_3 {
             display-name = "3 FKeys";
 
             bindings = <
