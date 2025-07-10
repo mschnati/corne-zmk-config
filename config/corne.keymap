@@ -72,7 +72,7 @@
             >;
         };
 
-        f-Keys_3 {
+        f-KEys_3 {
             display-name = "3 FKeys";
 
             bindings = <
