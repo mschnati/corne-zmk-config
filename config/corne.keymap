@@ -46,6 +46,13 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
             hold-trigger-on-release;
         };
+
+        td_shft: td_shft {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHFT";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>, <&caps_word>;
+        };
     };
 
     keymap {
@@ -62,7 +69,7 @@
 
             bindings = <
 &kp TAB    &kp Q            &kp W            &kp F              &kp P         &kp B        &kp J    &kp L          &kp U          &kp Y            &kp SINGLE_QUOTE  &kp NON_US_BACKSLASH
-&kp LSHFT  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml RCTRL T  &kp G        &kp M    &hmr LCTRL N   &hmr LSHIFT E  &hmr LEFT_ALT I  &hmr LEFT_GUI I   &kp SEMICOLON
+&td_shft   &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml RCTRL T  &kp G        &kp M    &hmr LCTRL N   &hmr LSHIFT E  &hmr LEFT_ALT I  &hmr LEFT_GUI I   &kp SEMICOLON
 &kp LCTRL  &kp Z            &kp X            &kp C              &kp D         &kp V        &kp K    &kp H          &kp COMMA      &kp PERIOD       &kp MINUS         &kp SLASH
                                              &kp LEFT_ALT       &mo 2         &kp SPACE    &kp RET  &kp BACKSPACE  &lt 1 DELETE
             >;
